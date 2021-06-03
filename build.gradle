@@ -26,4 +26,4 @@ test {
 }
 
 
-    mainClassName = 'sample.App'
+    mainClassName = 'sample.Main'
