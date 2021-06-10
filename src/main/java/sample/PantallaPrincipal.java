@@ -12,6 +12,16 @@ import javafx.stage.StageStyle;
 public class PantallaPrincipal {
 
 
+    @FXML
+    public void initialize(){
+
+        bitacora = new Bitacora("23-03-2020","25-03-2020","Madrid","Paris",3000F,"Tomates",15F,2000F,10.5F);
+
+
+    }
+
+
+
 
     @FXML
     public void clikcarBitacora() {

@@ -16,12 +16,12 @@ public class Formulario {
     @FXML
     Button BottonEnviar;
 
-    ArrayList<Label> listadeTextField = new ArrayList();
+   // ArrayList<Label> listadeTextField = new ArrayList();
 
-    @FXML
+    /*  @FXML
     public void initialize(){
 
-        listadeTextField.add(TextFieldSalidaFechaHora);
+      listadeTextField.add(TextFieldSalidaFechaHora);
         listadeTextField.add(TextFieldDestinoFechaHora);
         listadeTextField.add(TextFieldSalida);
         listadeTextField.add(TextFieldDestino);
@@ -31,11 +31,11 @@ public class Formulario {
         listadeTextField.add(TextFieldKilometros);
         listadeTextField.add(TextFieldLitros);
 
-        Binder.binderBitacora(TextFieldSalidaFechaHora,TextFieldDestinoFechaHora,estrella1);
+        Binder.binderBitacora(TextFieldSalidaFechaHora,TextFieldDestinoFechaHora,TextFieldSalida,TextFieldDestino,TextFieldIngresos,TextFieldMercanciaTransportada,TextFieldToneladas,TextFieldKilometros,TextFieldLitros); */
 
 
 
     }
 
 
-}
+
