@@ -59,7 +59,7 @@ public class PantallaPrincipal {
     @FXML
     public void recibirFormulario(Bitacora bitacora){
 
-    bitacora.
+  
     }
 
 
