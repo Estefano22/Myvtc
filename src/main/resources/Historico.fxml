@@ -8,7 +8,7 @@
    <children>
       <VBox layoutX="23.0" layoutY="28.0" prefHeight="350.0" prefWidth="555.0" spacing="2.0">
          <children>
-            <Label prefHeight="45.0" prefWidth="552.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 3;">
+            <Label fx:id="labelTituloFormulario" prefHeight="45.0" prefWidth="552.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 3;">
                <font>
                   <Font size="19.0" />
                </font>

@@ -11,11 +11,12 @@ import javafx.stage.StageStyle;
 
 public class PantallaPrincipal {
 
+    Formulario formulario = null;
 
     @FXML
     public void initialize(){
 
-        var bitacora = new Bitacora("23-03-2020","25-03-2020","Madrid","Paris",3000F,"Tomates",15F,2000F,10.5F);
+        var bitacora = new Bitacora("primer viaje","23-03-2021","25-03-2021","Madrid","Paris",3000F,"Tomates",15F,2500F,25.4F);
 
     }
 
@@ -26,8 +27,11 @@ public class PantallaPrincipal {
             Stage stage = new Stage();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/Formulario.fxml"));
             Pane root = (AnchorPane) loader.load();
-            Scene scene = new Scene(root, 600, 440);
+            Scene scene = new Scene(root, 600, 450);
             stage.setResizable(false);
+            Formulario controller2 = loader.getController();
+            controller2.enviarControllerPrincipal(this);
+            // TODO Coger el controller y enviar this.
             stage.setScene(scene);
             stage.show();
 
@@ -52,7 +56,11 @@ public class PantallaPrincipal {
         }
     }
 
+    @FXML
+    public void recibirFormulario(Bitacora bitacora){
 
+    bitacora.
+    }
 
 
 }

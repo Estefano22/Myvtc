@@ -7,15 +7,28 @@
 
 <AnchorPane prefHeight="454.0" prefWidth="611.0" style="-fx-background-color: #AAAAAA;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Formulario">
    <children>
-      <VBox prefHeight="400.0" prefWidth="600.0" spacing="4.0">
+      <VBox layoutX="-1.0" prefHeight="416.0" prefWidth="611.0" spacing="2.0">
          <children>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="44.0" prefWidth="600.0">
+               <padding>
+                  <Insets top="2.0" />
+               </padding>
+               <children>
+                  <TextField fx:id="TextFieldTitulo" layoutX="140.0" layoutY="5.0" prefHeight="32.0" prefWidth="445.0" />
+                  <Label layoutX="22.0" layoutY="14.0" text="Titulo Formulario">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
             <AnchorPane prefHeight="44.0" prefWidth="600.0">
                <padding>
                   <Insets top="2.0" />
                </padding>
                <children>
-                  <TextField fx:id="TextFieldSalidaFechaHora" layoutX="140.0" layoutY="5.0" prefHeight="32.0" prefWidth="445.0" />
-                  <Label layoutX="22.0" layoutY="14.0" text="Salida(Fecha/Hora)">
+                  <TextField fx:id="TextFieldSalidaFecha" layoutX="115.0" layoutY="5.0" prefHeight="32.0" prefWidth="470.0" />
+                  <Label layoutX="22.0" layoutY="14.0" text="Salida(Fecha)">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font></Label>
@@ -26,8 +39,8 @@
                   <Insets top="2.0" />
                </padding>
                <children>
-                  <TextField fx:id="TextFieldDestinoFechaHora" layoutX="148.0" layoutY="6.0" prefHeight="32.0" prefWidth="437.0" />
-                  <Label layoutX="22.0" layoutY="14.0" text="Destino(Fecha/Hora)">
+                  <TextField fx:id="TextFieldDestinoFecha" layoutX="121.0" layoutY="6.0" prefHeight="32.0" prefWidth="464.0" />
+                  <Label layoutX="22.0" layoutY="14.0" text="Destino(Fecha)">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font></Label>
@@ -136,6 +149,6 @@
             </AnchorPane>
          </children>
       </VBox>
-      <Button fx:id="BottonEnviar" layoutX="275.0" layoutY="415.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="62.0" text="Enviar" />
+      <Button fx:id="BottonEnviar" layoutX="275.0" layoutY="419.0" mnemonicParsing="false" onMouseClicked="#onclickenviarFormulario" prefHeight="25.0" prefWidth="62.0" text="Enviar" />
    </children>
 </AnchorPane>
