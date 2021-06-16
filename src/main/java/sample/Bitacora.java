@@ -2,7 +2,7 @@ package sample;
 
 public class Bitacora {
 
-    public String textFieldTitulo;
+    public String titulo;
     public String salidaFecha;
     public String destinoFecha;
     public String salida;
@@ -13,9 +13,14 @@ public class Bitacora {
     public Float distanciaConducida;
     public Float consumodeCombustible;
 
-    public Bitacora ( String textFieldTitulo, String salidaFecha, String destinoFecha, String salida,  String destino, Float ingresos ,String mercanciaTransportada, Float toneladas, Float distanciaConducida, Float consumodeCombustible ){
+    public Bitacora (){
 
-        this.textFieldTitulo = textFieldTitulo;
+    };
+
+
+    public Bitacora (String titulo, String salidaFecha, String destinoFecha, String salida,  String destino, Float ingresos ,String mercanciaTransportada, Float toneladas, Float distanciaConducida, Float consumodeCombustible ){
+
+        this.titulo = titulo;
         this.salidaFecha = salidaFecha;
         this.destinoFecha = destinoFecha;
         this.salida = salida;

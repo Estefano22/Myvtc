@@ -21,17 +21,31 @@ public class Formulario {
 
     @FXML
     public void onclickenviarFormulario(){
-        Bitacora b = new Bitacora("Formulario1","23-03-2021","24-03-2021","Madrid","Paris",3000F,"Tomates",12F,2500F,14.3F);
+
+        Bitacora b = new Bitacora();
+        b.titulo = TextFieldTitulo.getText();
+        b.salidaFecha = TextFieldSalidaFecha.getText();
+        b.destinoFecha = TextFieldDestinoFecha.getText();
+        b.salida = TextFieldSalida.getText();
+        b.destino = TextFieldDestino.getText();
+        b.ingresos = Float.valueOf(TextFieldIngresos.getText());
+        b.mercanciaTransportada = TextFieldMercanciaTransportada.getText();
+        b.toneladas = Float.valueOf(TextFieldToneladas.getText());
+        b.distanciaConducida = Float.valueOf(TextFieldKilometros.getText());
+        b.consumodeCombustible = Float.valueOf(TextFieldLitros.getText());
+
         pantallaPrincipal.recibirFormulario(b);
 
+        //bitacoraRecibida = new Bitacora(bitacora.textFieldTitulo,bitacora.salidaFecha,bitacora.destinoFecha,bitacora.salida,bitacora.destino,bitacora.ingresos,bitacora.mercanciaTransportada,bitacora.toneladas,bitacora.distanciaConducida,bitacora.consumodeCombustible);
+        // Bitacora b = new Bitacora("primer viaje","23-03-2021","24-03-2021","Madrid","Paris",3000F,"Tomates",12F,2500F,14.3F);
+        //pantallaPrincipal.recibirFormulario(b);
 
-// TODO llamar al controllerPantalla principal para llamar a una funcion que guarde la bitacora.
-        // controllerPrincipal.enviarBitacora(new Bitacora(.....))
     }
 
 
     public void enviarControllerPrincipal(PantallaPrincipal pantallaPrincipal) {
         this.pantallaPrincipal = pantallaPrincipal;
+
 
     }
 }
