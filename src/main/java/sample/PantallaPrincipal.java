@@ -40,6 +40,12 @@ public class PantallaPrincipal {
 
         Binder.binderTarea(bitacora1);
         Binder.binderTarea(bitacora2);
+        Binder.binderTarea(bitacora3);
+        Binder.binderTarea(bitacora4);
+        Binder.binderTarea(bitacora5);
+        Binder.binderTarea(bitacora6);
+        Binder.binderTarea(bitacora7);
+        Binder.binderTarea(bitacora8);
 
     }
 
