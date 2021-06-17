@@ -8,42 +8,42 @@
    <children>
       <VBox layoutX="23.0" layoutY="28.0" prefHeight="350.0" prefWidth="555.0" spacing="2.0">
          <children>
-            <Label fx:id="labelTituloFormulario" prefHeight="45.0" prefWidth="552.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 3;">
+            <Label fx:id="labelTituloFormulario1" prefHeight="45.0" prefWidth="552.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 3;">
                <font>
                   <Font size="19.0" />
                </font>
             </Label>
-            <Label layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="552.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 3;">
+            <Label fx:id="labelTituloFormulario2" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="552.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 3;">
                <font>
                   <Font size="19.0" />
                </font>
             </Label>
-            <Label layoutX="10.0" layoutY="55.0" prefHeight="45.0" prefWidth="552.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 3;">
+            <Label fx:id="labelTituloFormulario3" layoutX="10.0" layoutY="55.0" prefHeight="45.0" prefWidth="552.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 3;">
                <font>
                   <Font size="19.0" />
                </font>
             </Label>
-            <Label layoutX="10.0" layoutY="100.0" prefHeight="45.0" prefWidth="552.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 3;">
+            <Label fx:id="labelTituloFormulario4" layoutX="10.0" layoutY="100.0" prefHeight="45.0" prefWidth="552.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 3;">
                <font>
                   <Font size="19.0" />
                </font>
             </Label>
-            <Label layoutX="10.0" layoutY="145.0" prefHeight="45.0" prefWidth="552.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 3;">
+            <Label fx:id="labelTituloFormulario5" layoutX="10.0" layoutY="145.0" prefHeight="45.0" prefWidth="552.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 3;">
                <font>
                   <Font size="19.0" />
                </font>
             </Label>
-            <Label layoutX="10.0" layoutY="190.0" prefHeight="45.0" prefWidth="552.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 3;">
+            <Label fx:id="labelTituloFormulario6" layoutX="10.0" layoutY="190.0" prefHeight="45.0" prefWidth="552.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 3;">
                <font>
                   <Font size="19.0" />
                </font>
             </Label>
-            <Label layoutX="10.0" layoutY="245.0" prefHeight="45.0" prefWidth="552.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 3;">
+            <Label fx:id="labelTituloFormulario7" layoutX="10.0" layoutY="245.0" prefHeight="45.0" prefWidth="552.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 3;">
                <font>
                   <Font size="19.0" />
                </font>
             </Label>
-            <Label layoutX="10.0" layoutY="292.0" prefHeight="45.0" prefWidth="552.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 3;">
+            <Label fx:id="labelTituloFormulario8" layoutX="10.0" layoutY="292.0" prefHeight="45.0" prefWidth="552.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 3;">
                <font>
                   <Font size="19.0" />
                </font>
