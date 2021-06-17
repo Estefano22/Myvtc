@@ -5,11 +5,18 @@ import javafx.scene.control.Label;
 
 public class Historico {
 
+    PantallaPrincipal pantallaPrincipal;
 
 
-@FXML
+    @FXML
     Label labelTituloFormulario;
 
+
+    @FXML
+    public void recibirTareaHistorico(Bitacora bitacora){
+        labelTituloFormulario.setText(bitacora.titulo);
+
+    }
 
 
 }

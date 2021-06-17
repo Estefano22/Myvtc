@@ -80,7 +80,7 @@
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font></Label>
-                  <TextField fx:id="TextFieldIngresos" layoutX="78.0" layoutY="7.0" prefHeight="32.0" prefWidth="508.0" />
+                  <TextField fx:id="TextFieldIngresos" layoutX="78.0" layoutY="7.0" prefHeight="32.0" prefWidth="508.0" text="1500" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="10.0" layoutY="186.0" prefHeight="44.0" prefWidth="600.0">
@@ -105,7 +105,7 @@
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font></Label>
-                  <TextField fx:id="TextFieldToneladas" layoutX="121.0" layoutY="6.0" prefHeight="32.0" prefWidth="464.0" />
+                  <TextField fx:id="TextFieldToneladas" layoutX="121.0" layoutY="6.0" prefHeight="32.0" prefWidth="464.0" text="5000" />
                   <Label layoutX="520.0" layoutY="14.0" text="Toneladas">
                      <font>
                         <Font name="System Bold" size="12.0" />
@@ -122,7 +122,7 @@
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font></Label>
-                  <TextField fx:id="TextFieldKilometros" layoutX="141.0" layoutY="6.0" prefHeight="32.0" prefWidth="445.0" />
+                  <TextField fx:id="TextFieldKilometros" layoutX="141.0" layoutY="6.0" prefHeight="32.0" prefWidth="445.0" text="2000" />
                   <Label layoutX="515.0" layoutY="14.0" text="Kilometros">
                      <font>
                         <Font name="System Bold" size="12.0" />
@@ -140,7 +140,7 @@
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="TextFieldLitros" layoutX="171.0" layoutY="6.0" prefHeight="32.0" prefWidth="415.0" />
+                  <TextField fx:id="TextFieldLitros" layoutX="171.0" layoutY="6.0" prefHeight="32.0" prefWidth="415.0" text="20" />
                   <Label layoutX="549.0" layoutY="15.0" text="Litros">
                      <font>
                         <Font name="System Bold" size="11.0" />

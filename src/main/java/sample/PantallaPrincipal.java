@@ -12,6 +12,7 @@ import java.util.ArrayList;
 public class PantallaPrincipal {
 
     Formulario formulario;
+    Historico historico;
 
     // TODO Crear una lista de bit♣coras.
     ArrayList<Bitacora> listadeBitacoras  = new ArrayList();
@@ -29,23 +30,17 @@ public class PantallaPrincipal {
         Bitacora bitacora8 = new Bitacora("octavo viaje","23-03-2021","25-03-2021","Graz","Paris",3000F,"Palets",5F,2350F,25.4F);
 
 
-   listadeBitacoras.add(bitacora1);
-   listadeBitacoras.add(bitacora2);
-   listadeBitacoras.add(bitacora3);
-   listadeBitacoras.add(bitacora4);
-   listadeBitacoras.add(bitacora5);
-   listadeBitacoras.add(bitacora6);
-   listadeBitacoras.add(bitacora7);
-   listadeBitacoras.add(bitacora8);
+        listadeBitacoras.add(bitacora1);
+        listadeBitacoras.add(bitacora2);
+        listadeBitacoras.add(bitacora3);
+        listadeBitacoras.add(bitacora4);
+        listadeBitacoras.add(bitacora5);
+        listadeBitacoras.add(bitacora6);
+        listadeBitacoras.add(bitacora7);
+        listadeBitacoras.add(bitacora8);
 
-        Binder.binderTarea(bitacora1);
-        Binder.binderTarea(bitacora2);
-        Binder.binderTarea(bitacora3);
-        Binder.binderTarea(bitacora4);
-        Binder.binderTarea(bitacora5);
-        Binder.binderTarea(bitacora6);
-        Binder.binderTarea(bitacora7);
-        Binder.binderTarea(bitacora8);
+        //Binder.binder.bitacora(bitacora1,bitacora2,bitacora3,bitacora4,bitacora5,bitacora6,bitacora7,bitacora8);
+
 
     }
 
@@ -59,8 +54,8 @@ public class PantallaPrincipal {
             Pane root = (AnchorPane) loader.load();
             Scene scene = new Scene(root, 600, 450);
             stage.setResizable(false);
-            Formulario controller2 = loader.getController();
-            controller2.enviarControllerPrincipal(this);
+            formulario = loader.getController();
+            formulario.enviarControllerPrincipal(this);
             stage.setScene(scene);
             stage.show();
 
@@ -76,6 +71,8 @@ public class PantallaPrincipal {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/Historico.fxml"));
             Pane root = (AnchorPane) loader.load();
             Scene scene = new Scene(root, 650, 500);
+            historico = loader.getController();
+
             stage.setResizable(false);
             stage.setScene(scene);
             stage.show();
@@ -87,9 +84,14 @@ public class PantallaPrincipal {
 
     @FXML
     public void recibirFormulario(Bitacora bitacora){
+        listadeBitacoras.add(bitacora);
+        if (historico == null) {
+            clikcarHistorico();
+        }
+        historico.recibirTareaHistorico(bitacora);
 
 
-   }
+    }
 
 
 }
