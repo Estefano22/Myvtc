@@ -88,7 +88,7 @@ public class PantallaPrincipal {
         if (historico == null) {
             clikcarHistorico();
         }
-        historico.recibirTareaHistorico(bitacora);
+        historico.recibirTareaHistorico(listadeBitacoras);
 
 
     }

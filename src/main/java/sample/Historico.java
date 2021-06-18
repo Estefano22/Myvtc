@@ -14,23 +14,23 @@ public class Historico {
     Label labelTituloFormulario1, labelTituloFormulario2, labelTituloFormulario3, labelTituloFormulario4,labelTituloFormulario5,labelTituloFormulario6,labelTituloFormulario7,labelTituloFormulario8;
 
 
-    @FXML
-    public void recibirTareaHistorico(Bitacora bitacora){
-        for (int i = 0; i< listadeLabel.size(); i++)
-            labelTituloFormulario1.setText(bitacora.titulo);
-            labelTituloFormulario2.setText(bitacora.titulo);
-            labelTituloFormulario3.setText(bitacora.titulo);
-            labelTituloFormulario4.setText(bitacora.titulo);
-            labelTituloFormulario5.setText(bitacora.titulo);
-            labelTituloFormulario6.setText(bitacora.titulo);
-            labelTituloFormulario7.setText(bitacora.titulo);
-            labelTituloFormulario8.setText(bitacora.titulo);
-
+    public void initialize() {
+        listadeLabel.add(labelTituloFormulario1);
+        listadeLabel.add(labelTituloFormulario2);
+        listadeLabel.add(labelTituloFormulario3);
+        listadeLabel.add(labelTituloFormulario4);
+        listadeLabel.add(labelTituloFormulario5);
+        listadeLabel.add(labelTituloFormulario6);
+        listadeLabel.add(labelTituloFormulario7);
+        listadeLabel.add(labelTituloFormulario8);
 
     }
 
+    @FXML
+    public void recibirTareaHistorico(ArrayList<Bitacora> bitacora) {
 
+        for (int i = 0; i < listadeLabel.size(); i++) {
+            listadeLabel.get(i).setText(bitacora.get(i).titulo);
+        }
+    }
 }
-
-
-
