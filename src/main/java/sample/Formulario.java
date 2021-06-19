@@ -6,7 +6,7 @@ import javafx.scene.control.TextField;
 public class Formulario {
 
     PantallaPrincipal pantallaPrincipal;
-
+    Historico historico;
 
     @FXML
     public void initialize(){
@@ -35,14 +35,12 @@ public class Formulario {
             b.distanciaConducida = Float.valueOf(TextFieldKilometros.getText());
             b.consumodeCombustible = Float.valueOf(TextFieldLitros.getText());
             pantallaPrincipal.recibirFormulario(b);
+           //historico.rellenarLabel(b.titulo);
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("Ha fallado la creaci♥n de la bit♣cora");
         }
 
-        //bitacoraRecibida = new Bitacora(bitacora.textFieldTitulo,bitacora.salidaFecha,bitacora.destinoFecha,bitacora.salida,bitacora.destino,bitacora.ingresos,bitacora.mercanciaTransportada,bitacora.toneladas,bitacora.distanciaConducida,bitacora.consumodeCombustible);
-        // Bitacora b = new Bitacora("primer viaje","23-03-2021","24-03-2021","Madrid","Paris",3000F,"Tomates",12F,2500F,14.3F);
-        //pantallaPrincipal.recibirFormulario(b);
 
     }
 
@@ -51,6 +49,10 @@ public class Formulario {
         this.pantallaPrincipal = pantallaPrincipal;
 
 
+    }
+
+    public void enviarHistorico(Historico historico){
+        this.historico = historico;
     }
 }
 

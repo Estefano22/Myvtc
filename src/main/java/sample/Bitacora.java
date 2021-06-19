@@ -13,6 +13,7 @@ public class Bitacora {
     public Float distanciaConducida;
     public Float consumodeCombustible;
 
+
     public Bitacora (){
 
     };
@@ -30,6 +31,7 @@ public class Bitacora {
         this.toneladas = toneladas;
         this.distanciaConducida = distanciaConducida;
         this.consumodeCombustible = consumodeCombustible;
+
     }
 
 }

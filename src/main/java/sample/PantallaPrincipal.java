@@ -39,7 +39,7 @@ public class PantallaPrincipal {
         listadeBitacoras.add(bitacora7);
         listadeBitacoras.add(bitacora8);
 
-        //Binder.binder.bitacora(bitacora1,bitacora2,bitacora3,bitacora4,bitacora5,bitacora6,bitacora7,bitacora8);
+
 
 
     }
@@ -72,7 +72,6 @@ public class PantallaPrincipal {
             Pane root = (AnchorPane) loader.load();
             Scene scene = new Scene(root, 650, 500);
             historico = loader.getController();
-
             stage.setResizable(false);
             stage.setScene(scene);
             stage.show();

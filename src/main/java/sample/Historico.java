@@ -10,6 +10,7 @@ public class Historico {
     PantallaPrincipal pantallaPrincipal;
 
     ArrayList<Label> listadeLabel = new ArrayList();
+    Bitacora bitacuraAux;
     @FXML
     Label labelTituloFormulario1, labelTituloFormulario2, labelTituloFormulario3, labelTituloFormulario4,labelTituloFormulario5,labelTituloFormulario6,labelTituloFormulario7,labelTituloFormulario8;
 
@@ -24,13 +25,28 @@ public class Historico {
         listadeLabel.add(labelTituloFormulario7);
         listadeLabel.add(labelTituloFormulario8);
 
+
     }
 
-    @FXML
     public void recibirTareaHistorico(ArrayList<Bitacora> bitacora) {
 
-        for (int i = 0; i < listadeLabel.size(); i++) {
-            listadeLabel.get(i).setText(bitacora.get(i).titulo);
+    bitacuraAux = bitacora.get(8);
+labelTituloFormulario1.setText(bitacuraAux.titulo);
+        //for (int i = 0; i < listadeLabel.size(); i++)
+              //  listadeLabel.get(i).setText(bitacora.get(i).titulo);
+
+            }
+
+
+
+
+
+           /* public  void rellenarLabel(String titulo){
+        labelTituloFormulario1.setText(titulo);
+
+
+            }*/
+
         }
-    }
-}
+
+
