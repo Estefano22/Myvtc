@@ -1,16 +1,22 @@
 package sample;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 import java.util.ArrayList;
 
 public class Historico {
 
     PantallaPrincipal pantallaPrincipal;
+    DetallesBitacora detallesBitacora;
+    Formulario formulario;
 
     ArrayList<Label> listadeLabel = new ArrayList();
-    Bitacora bitacuraAux;
+    Bitacora bitacoraAux;
     @FXML
     Label labelTituloFormulario1, labelTituloFormulario2, labelTituloFormulario3, labelTituloFormulario4,labelTituloFormulario5,labelTituloFormulario6,labelTituloFormulario7,labelTituloFormulario8;
 
@@ -30,12 +36,12 @@ public class Historico {
 
     public void recibirTareaHistorico(ArrayList<Bitacora> bitacora) {
 
-    bitacuraAux = bitacora.get(8);
-labelTituloFormulario1.setText(bitacuraAux.titulo);
+        bitacoraAux = bitacora.get(8);
+        labelTituloFormulario1.setText(bitacoraAux.titulo);
         //for (int i = 0; i < listadeLabel.size(); i++)
-              //  listadeLabel.get(i).setText(bitacora.get(i).titulo);
+        //  listadeLabel.get(i).setText(bitacora.get(i).titulo);
 
-            }
+    }
 
 
 
@@ -45,8 +51,14 @@ labelTituloFormulario1.setText(bitacuraAux.titulo);
         labelTituloFormulario1.setText(titulo);
 
 
-            }*/
 
-        }
+         }*/
+
+
+
+
+
+
+}
 
 

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #AAAAAA;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DetallesBitacora">
+   <children>
+      <Label layoutX="30.0" layoutY="34.0" text="Salida">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="25.0" layoutY="80.0" text="Destino">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="23.0" layoutY="132.0" text="Ingresos">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="19.0" layoutY="192.0" text="Mercancia Transportada">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="15.0" layoutY="247.0" text="Distancia conducida">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelDetallesBitacoraSalida" layoutX="87.0" layoutY="28.0" onMouseClicked="#clikcarLabel1" prefHeight="29.0" prefWidth="388.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 3;" />
+      <Label fx:id="labelDetallesBitacoraDestino" layoutX="87.0" layoutY="74.0" prefHeight="29.0" prefWidth="388.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 3;" />
+      <Label fx:id="labelDetallesBitacoraIngresos" layoutX="87.0" layoutY="126.0" prefHeight="29.0" prefWidth="388.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 3;" />
+      <Label fx:id="labelDetallesBitacoraMercancia" layoutX="169.0" layoutY="186.0" prefHeight="29.0" prefWidth="307.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 3;" />
+      <Label fx:id="labelDetallesBitacoraKilometros" layoutX="148.0" layoutY="241.0" prefHeight="29.0" prefWidth="331.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 3;" />
+   </children>
+</AnchorPane>
