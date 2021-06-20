@@ -21,7 +21,7 @@ public class PantallaPrincipal {
     public void clikcarBitacora() {
         try {
             Stage stage = new Stage();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Formulario.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/formulario.fxml"));
             Pane root = loader.load();
             stage.setTitle("Bitacora");
             Scene scene = new Scene(root, 600, 450);
@@ -40,7 +40,7 @@ public class PantallaPrincipal {
     public void clikcarDetallesbitacora() {
         try {
             Stage stage = new Stage();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Detalles.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/detalles.fxml"));
             Pane root =  loader.load();
             stage.setTitle("Dettales Bitacora");
             Scene scene = new Scene(root, 600, 400);

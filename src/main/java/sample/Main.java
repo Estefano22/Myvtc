@@ -12,7 +12,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         try {
             System.out.println("Empezando");
-            AnchorPane root = FXMLLoader.load(getClass().getResource("/PantallaPrincipal.fxml"));
+            AnchorPane root = FXMLLoader.load(getClass().getResource("/pantallaprincipal.fxml"));
             primaryStage.setTitle("Myvtc");
             Scene scene = new Scene(root,600,400);
             primaryStage.setScene(scene);
