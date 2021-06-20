@@ -3,24 +3,26 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
+import java.util.ArrayList;
+
 public class Formulario {
 
     PantallaPrincipal pantallaPrincipal;
-    Historico historico;
+
 
     @FXML
-    public void initialize(){
+    public void initialize() {
     }
 
     @FXML
-    TextField  TextFieldTitulo, TextFieldSalidaFecha, TextFieldDestinoFecha, TextFieldSalida,TextFieldDestino, TextFieldIngresos, TextFieldMercanciaTransportada, TextFieldToneladas,TextFieldKilometros, TextFieldLitros;
+    TextField TextFieldTitulo, TextFieldSalidaFecha, TextFieldDestinoFecha, TextFieldSalida, TextFieldDestino, TextFieldIngresos, TextFieldMercanciaTransportada, TextFieldToneladas, TextFieldKilometros, TextFieldLitros;
 
     @FXML
     Button BottonEnviar;
 
 
     @FXML
-    public void onclickenviarFormulario(){
+    public void onclickenviarFormulario() {
 
         try {
             Bitacora b = new Bitacora();
@@ -35,7 +37,6 @@ public class Formulario {
             b.distanciaConducida = Float.valueOf(TextFieldKilometros.getText());
             b.consumodeCombustible = Float.valueOf(TextFieldLitros.getText());
             pantallaPrincipal.recibirFormulario(b);
-           //historico.rellenarLabel(b.titulo);
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("Ha fallado la creaci♥n de la bit♣cora");
@@ -45,16 +46,16 @@ public class Formulario {
     }
 
 
+
+
     public void enviarControllerPrincipal(PantallaPrincipal pantallaPrincipal) {
         this.pantallaPrincipal = pantallaPrincipal;
 
 
     }
-
-    public void enviarHistorico(Historico historico){
-        this.historico = historico;
-    }
 }
+
+
 
 
 

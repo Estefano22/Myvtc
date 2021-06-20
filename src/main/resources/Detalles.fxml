@@ -4,11 +4,15 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #AAAAAA;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Historico">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #AAAAAA;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Detalles">
    <children>
-      <VBox layoutX="23.0" layoutY="28.0" prefHeight="350.0" prefWidth="555.0" spacing="2.0">
+      <Label ellipsisString="" layoutX="220.0" layoutY="8.0" prefHeight="28.0" prefWidth="139.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 1; -fx-border-radius: 2;" text="Detalles Bitacora" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <VBox layoutX="19.0" layoutY="42.0" prefHeight="347.0" prefWidth="559.0" spacing="2.0">
          <children>
-            <Label fx:id="labelTituloFormulario1" prefHeight="45.0" prefWidth="552.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 3;">
+            <Label fx:id="labelTituloFormulario1" prefHeight="35.0" prefWidth="551.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 3;">
                <font>
                   <Font size="19.0" />
                </font>
@@ -44,6 +48,16 @@
                </font>
             </Label>
             <Label fx:id="labelTituloFormulario8" layoutX="10.0" layoutY="292.0" prefHeight="45.0" prefWidth="552.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 3;">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelTituloFormulario9" layoutX="10.0" layoutY="318.0" prefHeight="45.0" prefWidth="552.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 3;">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelTituloFormulario10" layoutX="10.0" layoutY="322.0" prefHeight="45.0" prefWidth="552.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 3;">
                <font>
                   <Font size="19.0" />
                </font>
