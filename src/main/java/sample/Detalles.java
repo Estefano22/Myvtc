@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class Detalles {
 
 
-    ArrayList<Label> listadeLabel = new ArrayList();
+    ArrayList<Label> listadeLabel = new ArrayList<>();
 
     Bitacora bitacoraAux;
 
@@ -43,7 +43,7 @@ public class Detalles {
     public void recibirTareaHistorico2(ArrayList<Bitacora> bitacora) {
 
         bitacoraAux = bitacora.get(1);
-       labelTituloFormulario2.setText(bitacoraAux.salidaFecha);
+        labelTituloFormulario2.setText(bitacoraAux.salidaFecha);
 
     }
     public void recibirTareaHistorico3(ArrayList<Bitacora> bitacora) {

@@ -17,8 +17,6 @@ public class PantallaPrincipal {
     ArrayList<Bitacora> listadeBitacoras  = new ArrayList<>();
 
 
-
-
     @FXML
     public void clikcarBitacora() {
         try {
