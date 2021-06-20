@@ -4,7 +4,6 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -14,6 +13,7 @@ public class Main extends Application {
         try {
             System.out.println("Empezando");
             AnchorPane root = FXMLLoader.load(getClass().getResource("/PantallaPrincipal.fxml"));
+            primaryStage.setTitle("Myvtc");
             Scene scene = new Scene(root,600,400);
             primaryStage.setScene(scene);
             primaryStage.show();

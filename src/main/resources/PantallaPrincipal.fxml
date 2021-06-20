@@ -26,14 +26,14 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="323.0" layoutY="127.0" onMouseClicked="#clikcarHistorico" prefHeight="143.0" prefWidth="190.0">
+      <AnchorPane layoutX="323.0" layoutY="127.0" onMouseClicked="#clikcarDetallesbitacora" prefHeight="143.0" prefWidth="190.0">
          <children>
             <ImageView fitHeight="150.0" fitWidth="190.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@fotoblanca.jpg" />
                </image>
             </ImageView>
-            <Label layoutX="69.0" layoutY="14.0" text="Historico" textFill="#00a0ff">
+            <Label layoutX="47.0" layoutY="14.0" text="Detalles Bitacora" textFill="#00a0ff">
                <font>
                   <Font name="Arial Bold" size="12.0" />
                </font>

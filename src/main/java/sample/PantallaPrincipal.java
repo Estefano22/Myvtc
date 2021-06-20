@@ -23,6 +23,7 @@ public class PantallaPrincipal {
             Stage stage = new Stage();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/Formulario.fxml"));
             Pane root = loader.load();
+            stage.setTitle("Bitacora");
             Scene scene = new Scene(root, 600, 450);
             stage.setResizable(false);
             formulario = loader.getController();
@@ -36,11 +37,12 @@ public class PantallaPrincipal {
     }
 
     @FXML
-    public void clikcarHistorico() {
+    public void clikcarDetallesbitacora() {
         try {
             Stage stage = new Stage();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/Detalles.fxml"));
             Pane root =  loader.load();
+            stage.setTitle("Dettales Bitacora");
             Scene scene = new Scene(root, 600, 400);
             detalles = loader.getController();
             stage.setResizable(false);
