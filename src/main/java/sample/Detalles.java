@@ -35,63 +35,79 @@ public class Detalles {
 
     public void recibirTareaHistorico(ArrayList<Bitacora> bitacora) {
 
+        if (bitacora.size() > 0  ){
         bitacoraAux = bitacora.get(0);
         labelTituloFormulario1.setText(bitacoraAux.titulo);
-
+}
     }
 
     public void recibirTareaHistorico2(ArrayList<Bitacora> bitacora) {
-
-        bitacoraAux = bitacora.get(1);
-        labelTituloFormulario2.setText(bitacoraAux.salidaFecha);
+        if (bitacora.size() > 1  ) {
+            bitacoraAux = bitacora.get(1);
+            labelTituloFormulario2.setText(bitacoraAux.salidaFecha);
+        }
 
     }
     public void recibirTareaHistorico3(ArrayList<Bitacora> bitacora) {
-
-        bitacoraAux = bitacora.get(2);
-        labelTituloFormulario3.setText(bitacoraAux.destinoFecha);
+        if (bitacora.size() > 2  ) {
+            bitacoraAux = bitacora.get(2);
+            labelTituloFormulario3.setText(bitacoraAux.destinoFecha);
+        }
 
     }
     public void recibirTareaHistorico4(ArrayList<Bitacora> bitacora) {
-
-        bitacoraAux = bitacora.get(3);
-        labelTituloFormulario4.setText(bitacoraAux.salida);
+        if (bitacora.size() > 3  ) {
+            bitacoraAux = bitacora.get(3);
+            labelTituloFormulario4.setText(bitacoraAux.salida);
+        }
 
     }
     public void recibirTareaHistorico5(ArrayList<Bitacora> bitacora) {
 
-        bitacoraAux = bitacora.get(4);
-        labelTituloFormulario5.setText(bitacoraAux.destino);
+        if (bitacora.size() > 4  ) {
+            bitacoraAux = bitacora.get(4);
+            labelTituloFormulario5.setText(bitacoraAux.destino);
+        }
 
     }
     public void recibirTareaHistorico6(ArrayList<Bitacora> bitacora) {
-
-        bitacoraAux = bitacora.get(5);
-        labelTituloFormulario6.setText(String.valueOf(bitacoraAux.ingresos));
+        if (bitacora.size() > 5  ) {
+            bitacoraAux = bitacora.get(5);
+            labelTituloFormulario6.setText(String.valueOf(bitacoraAux.ingresos));
+        }
 
     }
     public void recibirTareaHistorico7(ArrayList<Bitacora> bitacora) {
 
-        bitacoraAux = bitacora.get(6);
-        labelTituloFormulario7.setText(bitacoraAux.mercanciaTransportada);
+        if (bitacora.size() > 6  ) {
+
+            bitacoraAux = bitacora.get(6);
+            labelTituloFormulario7.setText(bitacoraAux.mercanciaTransportada);
+        }
 
     }
     public void recibirTareaHistorico8(ArrayList<Bitacora> bitacora) {
 
-        bitacoraAux = bitacora.get(7);
-        labelTituloFormulario8.setText(String.valueOf(bitacoraAux.toneladas));
+        if (bitacora.size() > 7  ) {
+            bitacoraAux = bitacora.get(7);
+            labelTituloFormulario8.setText(String.valueOf(bitacoraAux.toneladas));
+        }
 
     }
     public void recibirTareaHistorico9(ArrayList<Bitacora> bitacora) {
 
-        bitacoraAux = bitacora.get(8);
-        labelTituloFormulario9.setText(String.valueOf(bitacoraAux.distanciaConducida));
+        if (bitacora.size() > 8  ) {
+            bitacoraAux = bitacora.get(8);
+            labelTituloFormulario9.setText(String.valueOf(bitacoraAux.distanciaConducida));
+        }
 
     }
     public void recibirTareaHistorico10(ArrayList<Bitacora> bitacora) {
 
-        bitacoraAux = bitacora.get(9);
-        labelTituloFormulario10.setText(String.valueOf(bitacoraAux.consumodeCombustible));
+        if (bitacora.size() > 9  ) {
+            bitacoraAux = bitacora.get(9);
+            labelTituloFormulario10.setText(String.valueOf(bitacoraAux.consumodeCombustible));
+        }
 
     }
 

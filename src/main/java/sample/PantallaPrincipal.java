@@ -58,6 +58,7 @@ public class PantallaPrincipal {
     @FXML
     public void recibirFormulario(Bitacora bitacora){
         listadeBitacoras.add(bitacora);
+
         detalles.recibirTareaHistorico(listadeBitacoras);
         detalles.recibirTareaHistorico2(listadeBitacoras);
         detalles.recibirTareaHistorico3(listadeBitacoras);
